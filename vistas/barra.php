@@ -38,7 +38,7 @@
             if(r == 1){
                window.location="barra.php";
             }else{
-               alertify.error("No se registro la compra.");
+               alertify.error("No se registro el estado.");
             }
          }
       });

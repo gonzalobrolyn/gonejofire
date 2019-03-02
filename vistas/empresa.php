@@ -146,7 +146,7 @@
                            <option value="A">Selecciona Cargo</option>
                            <option value="Administrador">Administrador</option>
                            <option value="Cajero">Cajero</option>
-                           <option value="Barmar-Cheff">Barmar-Cheff</option>
+                           <option value="Barman-Cheff">Barmar-Cheff</option>
                            <option value="Mesero">Mesero</option>
                         </select><p></p>
                         <input type="text" class="form-control" name="sueldo" id="sueldo" title="Sueldo" placeholder="Sueldo"><p></p>

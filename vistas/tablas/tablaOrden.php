@@ -18,7 +18,7 @@
             inner join producto as pro
                     on ord.orden_producto = pro.producto_id
                  where ord.orden_mesa = '$numMesa'
-                   and ord.orden_estado <> 'Pagado'
+                   and ord.orden_estado <> 'Cobrado'
                    and ord.orden_caja = '$idCaja'
               order by ord.orden_id asc";
    $queryOrden = mysqli_query($conexion, $sqlOrden);

@@ -1,9 +1,9 @@
 
 <?php
    session_start();
-   require_once "../../clases/Orden.php";
+   require_once "../../clases/Orden2.php";
 
-   $objEntregado = new orden();
+   $objEntregado = new orden2();
 
    $idCaja = $_SESSION['caja'];
 

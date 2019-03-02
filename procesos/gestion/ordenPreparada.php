@@ -1,9 +1,9 @@
 
 <?php
    session_start();
-   require_once "../../clases/Orden.php";
+   require_once "../../clases/Orden2.php";
 
-   $objPreparado = new ordenes();
+   $objPreparado = new orden2();
 
    $idOrden = $_POST['idOrden'];
    $idCaja = $_SESSION['caja'];

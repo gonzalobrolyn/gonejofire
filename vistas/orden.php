@@ -37,14 +37,14 @@
             </div>
             <div class="modal-body">
                <form id="frmNuevaOrden">
-                  <input type="text" name="mesa" id="mesa" value="<?php echo $numMesa; ?>" hidden>
-                  <input type="text" name="producto" id="producto" hidden>
-                  <input type="text" class="form-control" name="nombre" id="nombre" title="Nombre de Producto" readonly><p></p>
+                  <input type="text" name="mesaOr" id="mesaOr" value="<?php echo $numMesa; ?>" hidden>
+                  <input type="text" name="productoOr" id="productoOr" hidden>
+                  <input type="text" class="form-control" name="nombreOr" id="nombreOr" title="Nombre de Producto" readonly><p></p>
                   <div class="input-group">
                      <div class="input-group-addon">S/ </div>
-                     <input type="text" class="form-control" name="precio" id="precio" title="Precio de Producto" readonly>
+                     <input type="text" class="form-control" name="precioOr" id="precioOr" title="Precio de Producto" readonly>
                   </div><p></p>
-                  <input type="text" class="form-control" name="cantidad" id="cantidad" title="Cantidad" placeholder="Cantidad"><p></p>
+                  <input type="text" class="form-control" name="cantidadOr" id="cantidadOr" title="Cantidad" placeholder="Cantidad"><p></p>
                   <span class="btn btn-primary" id="btnGuardaOrden">Registrar</span>
                </form>
             </div>
@@ -69,7 +69,7 @@
 			$.ajax({
 				type:"POST",
 				data:datos,
-				url:"../procesos/registro/orden.php",
+				url:"../procesos/registro/orden2.php",
 				success:function(r){
 					if(r==1){
                   $('#frmNuevaOrden')[0].reset();
@@ -93,9 +93,9 @@
 
 <script type="text/javascript">
    function agregaDato(idProd,nombreProd,precioProd){
-      $('#producto').val(idProd);
-      $('#nombre').val(nombreProd);
-      $('#precio').val(precioProd);
+      $('#productoOr').val(idProd);
+      $('#nombreOr').val(nombreProd);
+      $('#precioOr').val(precioProd);
    }
 
    function entregaOrden(orden){

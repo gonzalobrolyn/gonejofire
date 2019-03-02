@@ -117,12 +117,12 @@
       $.ajax({
          type:"POST",
          data:"idMesa="+mesa,
-         url:"../procesos/gestion/prueba.php",
+         url:"../procesos/gestion/mesaCobrada.php",
          success:function(r){
-            if(r==1){
-               window.location="cajas.php";
+            if(r>0){
+               window.location="caja.php";
             }else{
-               alertify.error("Fallo al registrar.");
+               alertify.error("Fallo al registrar.&/&%");
             }
          }
       });

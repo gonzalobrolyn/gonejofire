@@ -54,13 +54,13 @@
                <?php
                   break;
                case 'Preparado': ?>
-               <span class="btn btn-warning btn-sm" onclick="entregaOrden('<?php echo $verOrden[0]; ?>')">
+               <span class="btn btn-info btn-sm" onclick="entregaOrden('<?php echo $verOrden[0]; ?>')">
                   <?php echo $verOrden[4]; ?>
                </span>
                <?php
                   break;
                case 'Entregado': ?>
-               <span class="btn btn-danger btn-sm">
+               <span class="btn btn-primary btn-sm">
                   <?php echo $verOrden[4]; ?>
                </span>
                <?php

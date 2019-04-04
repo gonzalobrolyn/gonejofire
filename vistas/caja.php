@@ -1,7 +1,7 @@
 
 <?php
    session_start();
-   if(isset($_SESSION['caja']) && ($_SESSION['cargo']=="Cajero" || $_SESSION['tipo']=="Empresario")){
+   if(isset($_SESSION['caja']) && ($_SESSION['cargo']==("Cajero"||"Administrador") || $_SESSION['tipo']=="Empresario")){
       require_once "menu.php";
       require_once "../clases/Gonexion.php";
 

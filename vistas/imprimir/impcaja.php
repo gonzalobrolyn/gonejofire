@@ -16,7 +16,7 @@
                    from movimiento as mov
              inner join persona as per
                      on mov.movimiento_persona = per.persona_id
-                  where mov.movimiento_nombre = 'Cuenta'
+                  where mov.movimiento_nombre = 'VentaHoy'
                     and mov.movimiento_caja = '$idCaja'
                order by mov.movimiento_id asc";
    $queryCuenta = mysqli_query($conexion, $sqlCuenta);

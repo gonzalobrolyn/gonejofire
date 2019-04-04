@@ -1,7 +1,7 @@
 
 <?php
    session_start();
-   if(isset($_SESSION['caja']) && ($_SESSION['cargo']=="Mesero" || $_SESSION['tipo']=="Empresario")){
+   if(isset($_SESSION['caja']) && ($_SESSION['cargo']==("Mesero"||"Administrador") || $_SESSION['tipo']=="Empresario")){
       require_once "menu.php";
       $numMesa = $_GET['numMesa'];
 
@@ -74,6 +74,7 @@
 					if(r==1){
                   $('#frmNuevaOrden')[0].reset();
                   $('#cargaTablaOrden').load("tablas/tablaOrden.php?mesa="+<?php echo $numMesa; ?>);
+                  $('#modalNuevaOrden').modal('hide');
                   alertify.success("Orden registrada.");
 					}else{
 						alertify.error("Fallo al registrar.");

@@ -42,10 +42,10 @@
                      <span class="btn btn-sm btn-success">
                         <span class="glyphicon glyphicon-eye-open"></span>
                      </span>
-                     <span class="btn btn-sm btn-warning">
+                     <span class="btn btn-sm btn-warning" data-toggle="modal" data-target="#modalEditarInsumo" onclick="agregaDatosEditar('<?php echo $verInsumo[0]; ?>')">
                         <span class="glyphicon glyphicon-pencil"></span>
                      </span>
-                     <span class="btn btn-sm btn-danger">
+                     <span class="btn btn-sm btn-danger" onclick="eliminaInsumo('<?php echo $verInsumo[0]; ?>')">
                         <span class="glyphicon glyphicon-trash"></span>
                      </span>
                   </p>

@@ -151,6 +151,7 @@
 					if(r==1){
                   $('#frmInformacion')[0].reset();
                   $('#cargaTablaAlmacen').load('tablas/tablaAlmacen.php');
+                  $('#modalCompletarInfo').modal('hide');
 						alertify.success("Agregado con exito.");
 					}else{
 						alertify.error("Fallo al agregar.");

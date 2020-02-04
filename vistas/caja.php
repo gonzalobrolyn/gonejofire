@@ -122,7 +122,7 @@
             if(r>0){
                window.location="caja.php";
             }else{
-               alertify.error("Fallo al registrar.&/&%");
+               alertify.error("Fallo al registrar.");
             }
          }
       });

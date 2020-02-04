@@ -10,7 +10,7 @@
 <head>
    <meta charset="utf-8">
    <title></title>
-   <meta http-equiv="refresh" content="30">
+   <meta http-equiv="refresh" content="10">
 </head>
 <body>
    <div class="container-fluid">

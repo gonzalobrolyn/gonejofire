@@ -54,7 +54,7 @@
                <?php
                   break;
                case 'Preparado': ?>
-               <span class="btn btn-info btn-sm" onclick="entregaOrden('<?php echo $verOrden[0]; ?>')">
+               <span class="btn btn-danger btn-sm" onclick="entregaOrden('<?php echo $verOrden[0]; ?>')">
                   <?php echo $verOrden[4]; ?>
                </span>
                <?php
